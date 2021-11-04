@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <SafeAreaView>
-      <StatusBar />
+      <StatusBar/>
       <Cesta {...mock}/>
     </SafeAreaView>
   );
