@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar/>
+      <StatusBar barStyle="dark-content"/>
       <Cesta {...mock}/>
     </SafeAreaView>
   );
