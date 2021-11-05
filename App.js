@@ -8,6 +8,8 @@ import AppLoading from 'expo-app-loading';
 import Cesta from "./src/telas/Cesta";
 import mock from './src/mocks/cesta';
 
+import GeneralStatusBarColor from './src/components/GeneralStatusBarColor';
+
 export default function App() {
   const [fonteCarregada] = useFonts({
     "MontserratRegular": Montserrat_400Regular,
@@ -19,9 +21,9 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar barStyle="dark-content"/>
+    <View style={{ flex: 1 }}>
+      <GeneralStatusBarColor backgroundColor="#3B3C3C" barStyle="light-content"/>
       <Cesta {...mock}/>
-    </SafeAreaView>
+    </View>
   );
 }
